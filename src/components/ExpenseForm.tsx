@@ -125,7 +125,7 @@ export default function ExpenseForm() {
         <div className='flex flex-col gap-2'>
             <label
             htmlFor='amount'
-            >Cantidad:</label>
+            >Valor:</label>
             <input 
                 type="number"
                 id="amount"
