@@ -51,7 +51,7 @@ export default function BudgetTracker() {
           type="button"
           className='bg-green-500 w-full p-2 text-white uppercase font-bold rounded-lg'
           onClick={() => dispatch({type: 'reset-app'})} >
-          CAMBIAR PRESUPUESTO
+          CAMBIAR PRESUPUESTO.
 
         </button>
         <AmountDisplay
