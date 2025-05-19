@@ -18,7 +18,6 @@ export default function BudgetTracker() {
   const percentage = +((totalExpenses / state.budget) * 100).toFixed(2) 
   console.log(totalExpenses)
   console.log(state.budget)
-  console.log(percentage)
   
 
   return (
@@ -49,9 +48,9 @@ export default function BudgetTracker() {
         </button>
         <button
           type="button"
-          className='bg-green-500 w-full p-2 text-white uppercase font-bold rounded-lg'
-          onClick={() => dispatch({type: 'reset-app'})} >
-          CAMBIAR PRESUPUESTO.
+          className='bg-green-400 w-full p-2 text-white uppercase font-bold rounded-lg'
+          onClick={() => dispatch({type: 'change-budget'})} >
+          RAMA PRINCIPAL
 
         </button>
         <AmountDisplay

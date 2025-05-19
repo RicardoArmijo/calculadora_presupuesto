@@ -11,7 +11,9 @@ export type BudgetActions =
 {type: 'get-expense-by-id', payload: {id: Expense['id']}} |
 {type: 'update-expense', payload: {expense: Expense}}| // aqui se pasa el expense completo con id
 {type: 'reset-app'} |// se agrega la accion para resetear la app
-{type: 'add-filter-category', payload: {id:category['id']}} // se agrega la accion para filtrar por categoria
+{type: 'add-filter-category', payload: {id:category['id']}} | // se agrega la accion para filtrar por categoria
+{type: 'change-budget'} // se agrega la accion para cambiar el presupuesto
+
 
 // Se define la estrucutra del estado
 export type BudgetState = {  
@@ -125,6 +127,14 @@ export const budgetReducer = ( // Se deben colocar colocar el state y el action 
         return {
             ...state,
             currentCategory: action.payload.id // Se guarda la categoria actual en el state
+        }
+    }
+
+    if(action.type === 'change-budget'){
+        return {
+            ...state,
+            modal: true,
+            // Se guarda el nuevo presupuesto en el state
         }
     }
     
