@@ -42,7 +42,7 @@ export default function BudgetTracker() {
           type="button"
           className='bg-pink-600 w-full p-2 text-white uppercase font-bold rounded-lg'
           onClick={() => dispatch({type: 'reset-app'})} >
-          RESETEAR APP
+          RESETEAR APP PARA RAMA PRINCIPAL
           
 
         </button>
