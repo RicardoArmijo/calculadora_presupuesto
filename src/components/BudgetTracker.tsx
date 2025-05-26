@@ -50,7 +50,7 @@ export default function BudgetTracker() {
           type="button"
           className='bg-green-400 w-full p-2 text-white uppercase font-bold rounded-lg'
           onClick={() => dispatch({type: 'change-budget'})} >
-          RAMA SECUNDARIA CAMBIADA
+          RAMA SECUNDARIA
 
         </button>
         <AmountDisplay
