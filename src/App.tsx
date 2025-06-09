@@ -26,7 +26,7 @@ function App() {
     <>
       <header className="bg-blue-600 py-8 max-h-72">
         <h1 className="uppercase text-center font-black text-4xl text-white">
-          Planificador de Gastos
+          Planificador de Gastos y Git Hub
         </h1>
       </header>
       {/* Se utilizara un terniario en isValidBudget para que oculte el componente y se muestre el tracker una vez se ingrese el presupuesto*/}
